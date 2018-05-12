@@ -10,7 +10,6 @@ public class latar extends World
 {
     private papan papan;
     
-    Counter counter = new Counter("Skor: ");
     /**
      * Constructor for objects of class latar.
      * 
