@@ -34,8 +34,14 @@ public class Counter extends Actor
         
         updateImage();
     }
-    public void act() 
-    {
-        // Add your action code here.
-    }    
-}
+    public void act() {
+        if(value < target) {
+            value++;
+            updateImage();
+        }
+        else if(value > target) {
+            value--;
+            updateImage();
+        }
+    }  
+
