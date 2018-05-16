@@ -43,5 +43,15 @@ public class Counter extends Actor
             value--;
             updateImage();
         }
-    }  
+    }
+    
+    public void add(int score)
+    {
+        target += score;
+    }
+
+    public void subtract(int score)
+    {
+        target -= score;
+    }
 }
