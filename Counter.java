@@ -54,4 +54,19 @@ public class Counter extends Actor
     {
         target -= score;
     }
+    
+    public int getValue()
+    {
+        return value;
+    }
+    
+    /**
+     * Make the image
+     */
+    private void updateImage()
+    {
+        GreenfootImage image = getImage();
+        image.clear();
+        image.drawString(text + value, 1, 18);
+    }  
 }

@@ -10,6 +10,7 @@ public class latar extends World
 {
     private papan papan;
     
+    Counter counter = new Counter("Skor: ");
     /**
      * Constructor for objects of class latar.
      * 
@@ -22,7 +23,9 @@ public class latar extends World
        addObject(new papan(), 380, 490);
         prepare ();
     }
-    
+    public void tambah(){
+        counter.add(5);
+    }
     private void prepare()
     {
         hewan hewan = new  hewan();
@@ -99,7 +102,7 @@ public class latar extends World
         hewan hewan21 = new hewan();
         addObject(hewan21, 600, 170);
         hewan21.setLocation(655, 169);
-        
+    
     }
     
 }
