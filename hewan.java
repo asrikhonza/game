@@ -12,8 +12,15 @@ public class hewan extends Actor
      * Act - do whatever the hewan wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public hewan()
+    {
+        GreenfootImage gambar = getImage();
+        gambar.scale(gambar.getWidth(), gambar.getHeight()+5);
+        setImage(gambar);
+    }
+    
     public void act() 
     {
-        // Add your action code here.
-    }    
+        
+    }
 }

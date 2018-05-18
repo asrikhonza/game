@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.awt.*;
 
 /**
  * Write a description of class latar here.
@@ -8,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class latar extends World
 {
-    private papan papan;
-    
+  
     Counter counter = new Counter("Skor: ");
     /**
      * Constructor for objects of class latar.
@@ -19,13 +19,14 @@ public class latar extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(700, 500, 1); 
-        
-       addObject(new papan(), 380, 490);
+        addObject(counter, 300,400);
+        addObject(new papan(), 380, 490);
         prepare ();
     }
     public void tambah(){
         counter.add(5);
     }
+    
     private void prepare()
     {
         hewan hewan = new  hewan();

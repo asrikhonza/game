@@ -28,13 +28,13 @@ public class Counter extends Actor
         stringLength = (text.length() + 2) * 16;
 
         setImage(new GreenfootImage(stringLength, 24));
-        GreenfootImage image = getImage();
-        Font font = image.getFont();
-        image.setFont(font.deriveFont(24.0F));
+        GreenfootImage gambar = getImage();
+        Font font = gambar.getFont();
+        gambar.setFont(font.deriveFont(24.0F));
         
         updateImage();
     }
-    public void updateImage() {
+    public void act() {
         if(value < target) {
             value++;
             updateImage();
@@ -65,8 +65,8 @@ public class Counter extends Actor
      */
     private void updateImage()
     {
-        GreenfootImage image = getImage();
-        image.clear();
-        image.drawString(text + value, 1, 18);
+        GreenfootImage gambar = getImage();
+        gambar.clear();
+        gambar.drawString(text + value, 1, 18);
     }  
 }

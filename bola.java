@@ -14,7 +14,6 @@ public class bola extends Actor
      */
     private int deltaX;
     private int deltaY;
-    
     private boolean stuck = true;
     public void act() 
     {
@@ -22,7 +21,7 @@ public class bola extends Actor
         {
             move();
         }
-        
+   
     }   
     
     public void move()
@@ -83,6 +82,7 @@ public class bola extends Actor
         deltaY = -5;
         stuck = false;
       }
+    
 }
 
 
