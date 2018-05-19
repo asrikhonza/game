@@ -103,7 +103,6 @@ public class latar extends World
         hewan hewan21 = new hewan();
         addObject(hewan21, 600, 170);
         hewan21.setLocation(655, 169);
-    
+        
     }
-    
 }

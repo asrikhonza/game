@@ -75,6 +75,7 @@ public class bola extends Actor
        World world;
        world = getWorld();
        world.removeObject(hewan);
+       Greenfoot.playSound("bounce.mp3");
     }
     public void release()
       {
