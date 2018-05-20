@@ -11,6 +11,7 @@ public class latar extends World
 {
   
     Counter counter = new Counter("Skor: ");
+    GreenfootSound backgroundMusic = new GreenfootSound ("theme2.mp3");
     /**
      * Constructor for objects of class latar.
      * 
@@ -22,13 +23,25 @@ public class latar extends World
         addObject(counter, 600,50);
         addObject(new papan(), 380, 490);
         prepare ();
+        backgroundMusic.playLoop();
     }
     public void tambah(){
         counter.add(5);
     }
+    public void stopped()
+    {
+    backgroundMusic.pause();
+    }
+    public void started ()
+    {
+    backgroundMusic.playLoop();
+    }
+    
     
     private void prepare()
     {
+        ball bola = new ball();
+        addObject(bola, 380,460);
         hewan hewan = new  hewan();
         addObject(hewan, 326, 199);
         hewan hewan2 = new hewan();
