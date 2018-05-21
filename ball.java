@@ -73,7 +73,7 @@ public class ball extends Actor
         }
         if(getY()>=getWorld().getHeight()-getImage().getHeight()/2){
             Greenfoot.stop();
-            Greenfoot.playSound("fall.mp3");
+            Greenfoot.playSound("down.mp3");
         }
         
     }
