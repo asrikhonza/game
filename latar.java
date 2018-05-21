@@ -19,9 +19,9 @@ public class latar extends World
     public latar()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(700, 500, 1); 
-        addObject(counter, 600,50);
-        addObject(new papan(), 380, 490);
+        super(800, 500, 1); 
+        addObject(counter, 750,50);
+        addObject(new papan(), 390, 490);
         prepare ();
         backgroundMusic.playLoop();
     }
@@ -31,7 +31,7 @@ public class latar extends World
     public void stopped()
     {
         backgroundMusic.pause();
-    
+        setBackground("gameover.jpg");
     }
     
     public void started ()
@@ -42,7 +42,7 @@ public class latar extends World
     private void prepare()
     {
         ball bola = new ball();
-        addObject(bola, 380,460);
+        addObject(bola, 390,460);
         hewan hewan = new  hewan();
         addObject(hewan, 326, 199);
         hewan hewan2 = new hewan();
