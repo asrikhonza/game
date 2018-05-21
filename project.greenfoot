@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Sun May 20 20:50:01 ICT 2018
+#Mon May 21 15:15:11 ICT 2018
 dependency9.type=UsesDependency
 target4.type=ClassTarget
 <<<<<<<=HEAD
@@ -33,15 +33,16 @@ dependency2.to=latar
 target1.width=80
 dependency5.type=UsesDependency
 editor.fx.0.y=4
-target2.typeParameters=
 editor.fx.0.x=443
+target2.typeParameters=
+class.Game_Over.image=bunga 30.jpg
 dependency3.to=hewan
 target3.showInterface=false
 dependency4.to=Counter
 dependency5.to=papan
 target1.showInterface=false
-target5.showInterface=false
 dependency6.to=ball
+target5.showInterface=false
 class.latar.image=background1.jpg
 dependency7.to=papan
 dependency6.from=latar
@@ -50,10 +51,12 @@ dependency8.to=hewan
 dependency6.type=UsesDependency
 target1.type=ClassTarget
 dependency9.to=Counter
+class.Game_Over.superclass=greenfoot.Actor
 target1.typeParameters=
+class.Over.image=bunga 30.jpg
 target2.height=50
-target5.y=0
 target4.height=50
+target5.y=0
 target5.x=0
 target1.name=ball
 class.bola.image=red-draught.png
@@ -98,6 +101,7 @@ target2.showInterface=false
 mainWindow.height=744
 target3.name=papan
 class.papan.image=papan.png
+class.Over.superclass=greenfoot.World
 class.Counter.image=Counter.png
 dependency9.from=latar
 target3.width=60

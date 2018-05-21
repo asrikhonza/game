@@ -30,13 +30,14 @@ public class latar extends World
     }
     public void stopped()
     {
-    backgroundMusic.pause();
-    }
-    public void started ()
-    {
-    backgroundMusic.playLoop();
+        backgroundMusic.pause();
+    
     }
     
+    public void started ()
+    {
+        backgroundMusic.playLoop();
+    }
     
     private void prepare()
     {
